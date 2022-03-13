@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/historyDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/history_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_200"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:text="@string/product"/>
+
+        <TextView
+            android:id="@+id/history_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="price"/>
+
+        <TextView
+            android:id="@+id/history_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="status"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

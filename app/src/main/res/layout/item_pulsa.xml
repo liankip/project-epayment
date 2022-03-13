@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pulsa_detail"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    android:checkable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/pulsa_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pulsa"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

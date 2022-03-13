@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PulsaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/menuTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_500"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/numberTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor Telephone"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/number"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPulsa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:listitem="@layout/item_pulsa"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/batal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                app:strokeColor="@color/blue_500"
+                app:strokeWidth="2dp"/>
+
+            <Button
+                android:id="@+id/btnBuy"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/white"
+                android:text="@string/beli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
